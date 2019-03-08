@@ -12,7 +12,6 @@ module API
     insert_after Grape::Middleware::Formatter,
                  Middleware::Logger
 
-    prefix :api
     format :json
 
     helpers Support::Errors
